@@ -53,7 +53,7 @@ npx cypress run --spec cypress/e2e/BuyTickets/submit_request_for_ticket_purchase
 1. There is no indication of mandatory fields that are required.
 2. Visual error messages are not displayed when mandatory fields are missing, though red highlights indicate the mandatory status. An error popup message aids screen reader devices in translation.
 3. Selecting a return date earlier than the departure date does not trigger an error message, though departure and return date resets to same day.
-4. Able to Disabled dates in the date picker 
+4. Date picker allows to pick disabled dates
 5. Date formats lack consistency across different pages.
 6. URLs lack localization, making it challenging for English-speaking users to remember.
 7. Prices are not displayed per passenger; instead, they are shown for all passengers collectively.
