@@ -14,7 +14,7 @@ The primary goal of this automation is to test the process of submitting a ticke
     
 ## Test Organization
 1. Test files are in `cypress/e2e` under the spec folder. All the test scripts that need to be executed are created here.
-2. Functionality Test can be done for the following using Cypress:
+2. Functionality Test can be done for the following using Cypress. Each page can has its own class promoting a modular structure and test scripts can become more readable and maintainable.
     2.1 Train Times
     2.2 Buy Tickets
     2.3 Buy Leisure
@@ -41,6 +41,7 @@ Due to a bug with Cypress that resets the return date to today's date, a workaro
 2. The test presently has fixed, hardcoded days for arrival and departure. We can enhance flexibility by parameterizing them in fixture files to accommodate varied input scenarios.
 3. To promote reusability, we can consider exporting date utilities to commands.
 4. We can create `.github/workflows/cypress.yml` to setup CI via github actions
+
 
 ## Running the Tests
 To run the tests, ensure that Cypress is installed, and the web application is accessible. Use the following command:
